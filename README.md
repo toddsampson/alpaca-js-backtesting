@@ -6,14 +6,14 @@ This package is in no way affiliated with Alpaca
 
 ## Updated to Alpaca Data API v2
 
-This package is a fork of @kendelchopp/alpaca-js-backtesting in order for it to work with Alpaca Data API v2. All credit for this back still goes to Kendel for his great work.
+This package is a fork of @kendelchopp/alpaca-js-backtesting and @michaeljwright/alpaca-js-backtesting in order for it to work with Alpaca Data API v2 and additional data sources. All credit for this back still goes to Kendel for his great work.
 
 ## Getting Started
 
 ### Installing the package
 
 ```
-$ npm install @michaeljwright/alpaca-js-backtesting
+$ npm install @toddsampson/alpaca-js-backtesting
 ```
 
 ### Additional Market Data API usage
@@ -40,7 +40,7 @@ const alpaca = new Alpaca({
 **Note:** When passing in your alpaca object, you are giving this package the ability to use your keys to make API requests. This package will make API requests for the market data so that it can run the simulation. Be careful when sending out your alpaca object.
 
 ```JavaScript
-const Backtest = require('@michaeljwright/alpaca-js-backtesting');
+const Backtest = require('@toddsampson/alpaca-js-backtesting');
 
 const backtest = new Backtest({
   alpaca,
@@ -72,7 +72,7 @@ client.onDisconnect(() => {
 
 ## Alpaca Compatibility
 
-This table lists the version of @michaeljwright/alpaca-js-backtesting with the version of [alpaca-trade-api-js](https://github.com/alpacahq/alpaca-trade-api-js) it was tested with. Using other versions may require some syntax changes.
+This table lists the version of @toddsampson/alpaca-js-backtesting with the version of [alpaca-trade-api-js](https://github.com/alpacahq/alpaca-trade-api-js) it was tested with. Using other versions may require some syntax changes.
 
 | @kendelchopp/alpaca-js-backtesting    | @alpacahq/alpaca-trade-api-js |
 | ------------------------------------- | ----------------------------- |
@@ -81,7 +81,7 @@ This table lists the version of @michaeljwright/alpaca-js-backtesting with the v
 | 1.1.1                                 | 1.4.1                         |
 | 1.1.2                                 | 1.4.1                         |
 | 1.1.3                                 | 1.4.1                         |
-| @michaeljwright/alpaca-js-backtesting | @alpacahq/alpaca-trade-api-js |
+| @toddsampson/alpaca-js-backtesting | @alpacahq/alpaca-trade-api-js |
 | 2.0.3                                 | 2.1.0                         |
 
 ## Relevant Functions
